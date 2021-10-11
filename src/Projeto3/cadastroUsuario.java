@@ -1,5 +1,6 @@
 package Projeto3;
 import java.util.Scanner;
+import java.util.ArrayList;
 public class cadastroUsuario {
 	public static void main(String[] args) {
 		informacoesUsuario info = new informacoesUsuario();
