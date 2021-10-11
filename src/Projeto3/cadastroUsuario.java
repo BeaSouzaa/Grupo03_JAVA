@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class cadastroUsuario {
 	public static void main(String[] args) {
 		informacoesUsuario info = new informacoesUsuario();
-		Scanner leia = new Scanner (System.in
+		Scanner leia = new Scanner (System.in)
 					    ArrayList<String> lista = new ArrayList<String>();
 		        
 		        
