@@ -2,21 +2,20 @@ package Projeto3;
 import java.util.Scanner;
 public class cadastroUsuario {
 	public static void main(String[] args) {
+		informacoesUsuario info = new informacoesUsuario();
 		Scanner leia = new Scanner (System.in);
-		String nomeUsuario, cpfUsuario;
-		int idadeUsuario;
 		// Fazer a captura de informações do usuário
 		System.out.println("Digite aqui seu nome completo:"
 		+" (Apenas letras maiúsculas e minúsculas, sem símbolos ou números)");	
-		nomeUsuario = leia.nextLine();
+		info.setNomeUsuario(leia.nextLine()) ;
 		System.out.println("Digite a sua idade: ");
-		idadeUsuario= leia.nextInt();
+		info.setIdadeUsuario(leia.nextInt());
 		System.out.println("Digite o seu CPF(Cadastro de Pessoas Físicas): (Somente números)");
-		cpfUsuario = leia.next();
+		info.setCpfUsuario(leia.next()); 
 		
-		System.out.println("\nNome: "+nomeUsuario);
-		System.out.println("Idade: "+idadeUsuario+" anos");
-		System.out.println("CPF: "+cpfUsuario);
+		System.out.println("\nNome: "+info.getNomeUsuario());
+		System.out.println("Idade: "+info.getIdadeUsuario()+" anos");
+		System.out.println("CPF: "+info.getCpfUsuario());
 		leia.close();
 	}
 }
