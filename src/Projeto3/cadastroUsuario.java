@@ -65,6 +65,16 @@ public class cadastroUsuario {
 		System.out.println("\nNome: "+info.getNomeUsuario());
 		System.out.println("Idade: "+info.getIdadeUsuario()+" anos");
 		System.out.println("CPF: "+info.getCpfUsuario());
+		
+		 System.out.println("\nOs remédios disponíveis são: ");
+		        
+		        
+		        
+		        System.out.println(lista);
+		        
+		        System.out.println("\n\nSeu remédio encontra-se na lista?" + "\n(Caso sim digite 1, caso não digite 2) ");
+		        resposta = leia.nextLine();
+		
 		leia.close();
 	}
 }
