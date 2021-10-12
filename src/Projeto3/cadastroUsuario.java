@@ -8,17 +8,17 @@ public class cadastroUsuario {
 		ArrayList<String> lista = new ArrayList<String>();
 		int resposta;
 			    lista.add("\nAciclovir");
-		        lista.add("\n¡cido valprÛico");
+		        lista.add("\n√Åcido valpr√≥ico");
 		        lista.add("\nAlbendazol");
 		        lista.add("\nAmitriptilina");
 		        lista.add("\nAmoxicilina");
 		        lista.add("\nAnlodipino");
 		        lista.add("\nBenzilpenicilina benzatina");
-		        lista.add("\nBenzilpenicilina procaÌna + benzilpenicilina pot·ssica");
+		        lista.add("\nBenzilpenicilina proca√≠na + benzilpenicilina pot√°ssica");
 		        lista.add("\nBiperideno");
 		        lista.add("\nCaptopril");
 		        lista.add("\nCarbamazepina");
-		        lista.add("\nCarbonato de LÌtio");
+		        lista.add("\nCarbonato de L√≠tio");
 		        lista.add("\nCefalexina");
 		        lista.add("\nClomipramina");
 		        lista.add("\nClonazepam");
@@ -28,50 +28,61 @@ public class cadastroUsuario {
 		        lista.add("\nDigoxina");
 		        lista.add("\nDipirona");
 		        lista.add("\nEnalapril");
-		        lista.add("\nFenitoÌna");
+		        lista.add("\nFenito√≠na");
 		        lista.add("\nFenobarbital");
 		        lista.add("\nFurosemida");
 		        lista.add("\nFluoxetina");
 		        lista.add("\nGlibenclamida");
 		        lista.add("\nHaloperidol");
 		        lista.add("\nHidroclorotiaziada");
-		        lista.add("\nHidrÛxido de AlumÌnio");
+		        lista.add("\nHidr√≥xido de Alum√≠nio");
 		        lista.add("\nIbuprofeno");
 		        lista.add("\nLoratadina");
 		        lista.add("\nMetformina");
 		        lista.add("\nMetildopa");
 		        lista.add("\nMetronidazol");
 		        lista.add("\nMiconazol");
-		        lista.add("\nNitrofutantoÌna");
+		        lista.add("\nNitrofutanto√≠na");
 		        lista.add("\nOmeprazol");
 		        lista.add("\nParacetamol");
 		        lista.add("\nPrometazina");
 		        lista.add("\nPropranolol");
 		        lista.add("\nRivotril");
-		        lista.add("\nSais para reidrataÁ„o oral");
+		        lista.add("\nSais para reidrata√ß√£o oral");
 		        lista.add("\nSalbutamol");
 		        lista.add("\nSertralina");
 		        lista.add("\nSulfanetoxazol + Trimetroprima");
 		        lista.add("\nSertralina");
-		// Fazer a captura de informaÁıes do usu·rio
+		// Fazer a captura de informa√ß√µes do usu√°rio
 		System.out.println("Digite aqui seu nome completo:"
-		+" (Apenas letras mai˙sculas e min˙sculas, sem sÌmbolos ou n˙meros)");	
+		+" (Apenas letras mai√∫sculas e min√∫sculas, sem s√≠mbolos ou n√∫meros)");	
 		info.setNomeUsuario(leia.nextLine()) ;
 		System.out.println("Digite a sua idade: ");
 		info.setIdadeUsuario(leia.nextInt());
-		System.out.println("Digite o seu CPF(Cadastro de Pessoas FÌsicas): (Somente n˙meros)");
-		info.setCpfUsuario(leia.next()); 
+		
+		System.out.println("Digite o seu CPF(Cadastro de Pessoas F√≠sicas): (Somente n√∫meros)");
+		info.setCpfUsuario(leia.next());
+		 while(cpfUsuario.length() != 11) {
+		        	
+		        	System.out.println("Por favor, digite o CPF corretamente");
+		        
+		        	System.out.println("Digite o seu CPF(Cadastro de Pessoas F√≠sicas):"  + "\n(Somente n√∫meros)");
+			        cpfUsuario = leia.next();
+			        
+			      		        
+		        }
+		       
 		
 		System.out.println("\nNome: "+info.getNomeUsuario());
 		System.out.println("Idade: "+info.getIdadeUsuario()+" anos");
 		System.out.println("CPF: "+info.getCpfUsuario());
 		
-		System.out.println("\nOs remÈdios disponÌveis s„o: ");
+		System.out.println("\nOs rem√©dios dispon√≠veis s√£o: ");
 		        
 		System.out.println(lista);
 		        
-		System.out.println("\n\nSeu remÈdio encontra-se na lista?"
-		+ "\n(Caso sim digite 1, caso n„o digite 2) ");
+		System.out.println("\n\nSeu rem√©dio encontra-se na lista?"
+		+ "\n(Caso sim digite 1, caso n√£o digite 2) ");
 		resposta = leia.nextInt();
 		
 		leia.close();
