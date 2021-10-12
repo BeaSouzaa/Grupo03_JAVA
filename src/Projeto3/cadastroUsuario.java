@@ -62,6 +62,14 @@ public class cadastroUsuario {
 		System.out.println("Digite o seu CPF(Cadastro de Pessoas Físicas): (Somente números)");
 		info.setCpfUsuario(leia.next()); 
 		
+		while(info.getCpfUsuario().length() != 11) {
+        	
+        	System.out.println("Por favor, digite o CPF corretamente");
+        
+        	System.out.println("Digite o seu CPF(Cadastro de Pessoas Físicas):"  + "\n(Somente números)");
+	        info.setCpfUsuario(leia.next());	        
+        }
+		
 		System.out.println("\nNome: "+info.getNomeUsuario());
 		System.out.println("Idade: "+info.getIdadeUsuario()+" anos");
 		System.out.println("CPF: "+info.getCpfUsuario());
@@ -69,11 +77,18 @@ public class cadastroUsuario {
 		System.out.println("\nOs remédios disponíveis são: ");
 		        
 		System.out.println(lista);
-		        
-		System.out.println("\n\nSeu remédio encontra-se na lista?"
-		+ "\n(Caso sim digite 1, caso não digite 2) ");
-		resposta = leia.nextInt();
-		
+		do {
+			System.out.println("\n\nSeu remédio encontra-se na lista?"
+			+ "\n(Caso sim digite 1, caso não digite 2) ");
+			resposta = leia.nextInt();
+			
+				if(resposta == 1) {
+					System.out.println("Dirija-se ao posto com os seguintes documentos:\n RG, CPF e comprovante de residência");
+				}
+				else if(resposta != 1 || resposta != 2) {
+					System.out.println("Opção inválida, digite novamente");
+				}
+			} while (resposta != 1 && resposta != 2);
 		leia.close();
 	}
 }
