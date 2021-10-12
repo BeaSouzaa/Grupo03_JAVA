@@ -3,7 +3,21 @@ public class informacoesUsuario {
 	private String nomeUsuario;
 	private String cpfUsuario;
 	private int idadeUsuario;
+	private String emailUsuario;
+	private String remedio;
 	
+	public String getRemedio() {
+		return remedio;
+	}
+	public void setRemedio(String remedio) {
+		this.remedio = remedio;
+	}
+	public String getEmailUsuario() {
+		return emailUsuario;
+	}
+	public void setEmailUsuario(String emailUsuario) {
+		this.emailUsuario = emailUsuario;
+	}
 	public String getNomeUsuario() {
 		return nomeUsuario;
 	}

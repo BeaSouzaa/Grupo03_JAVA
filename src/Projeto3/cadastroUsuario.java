@@ -87,12 +87,19 @@ public class cadastroUsuario {
 				resposta = leia.nextInt();
 				if(resposta == 1) {
 					System.out.println("Dirija-se ao posto com os seguintes documentos:"
-							+"\n RG, CPF e comprovante de residência");
+							+"\n RG, CPF e a receita do seu médico");
+				}
+				else if(resposta == 2) {
+					System.out.println("Digite o nome do remédio desejado: ");
+					info.setRemedio(leia.next());
+					System.out.println("Digite agora seu email para contato: ");
+					info.setEmailUsuario(leia.next());
 				}
 				else if(resposta != 1 && resposta != 2) {
 					System.out.println("Opção inválida, digite novamente");
 				}
 			} while (resposta != 1 && resposta != 2);
+			System.out.println("Obrigado por usar nosso App!!");
 		leia.close();
 	}
 }
