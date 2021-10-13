@@ -2,7 +2,7 @@ package Projeto3;
 import java.util.Scanner;
 import java.util.ArrayList;
 public class cadastroUsuario {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		informacoesUsuario info = new informacoesUsuario();
 		Scanner leia = new Scanner (System.in);
 		ArrayList<String> lista = new ArrayList<String>();
@@ -53,7 +53,10 @@ public class cadastroUsuario {
 		        lista.add("\nSertralina");
 		        lista.add("\nSulfanetoxazol + Trimetroprima");
 		        lista.add("\nSertralina");
-		// Fazer a captura de informações do usuário
+		        
+		System.out.println("     |-----------------------------------------------------------------------"
+		+"-------|\n     |                                   ClickUBS                                   |\n"
+		+"     |------------------------------------------------------------------------------|\n\n");
 		System.out.println("Digite aqui seu nome completo:"
 		+" (Apenas letras maiúsculas e minúsculas, sem símbolos ou números)");	
 		info.setNomeUsuario(leia.nextLine()) ;
@@ -61,10 +64,10 @@ public class cadastroUsuario {
 		info.setIdadeUsuario(leia.nextInt());
 		System.out.println("Digite o seu CPF(Cadastro de Pessoas Físicas): (Somente números)");
 		info.setCpfUsuario(leia.next());
-		
+			
 			while(info.getCpfUsuario().length() != 11) {
 				System.out.println("Por favor, digite o CPF corretamente");
-				System.out.println("Digite o seu CPF(Cadastro de Pessoas Físicas):"  + "\n(Somente números)");
+				System.out.println("Digite a sua idade: ");
 				info.setCpfUsuario(leia.next());       	        
 			}
 		       
@@ -82,7 +85,7 @@ public class cadastroUsuario {
 		        
 		System.out.println(lista);
 			do {
-				System.out.println("\n\nSeu remédio encontra-se na lista?"
+				System.out.println("\nSeu remédio encontra-se na lista?"
 						+ "\n(Caso sim digite 1, caso não digite 2) ");
 				resposta = leia.nextInt();
 				if(resposta == 1) {
@@ -94,12 +97,16 @@ public class cadastroUsuario {
 					info.setRemedio(leia.next());
 					System.out.println("Digite agora seu email para contato: ");
 					info.setEmailUsuario(leia.next());
+					System.out.println("Ok, agora entraremos em contato com o email '"+info.getEmailUsuario()
+					+"' e lhe enviaremos um aviso caso a medicação '"+info.getRemedio()+"' entre em estoque!");
+					System.out.println("(Retornaremos a resposta em até 30 dias úteis)");
 				}
 				else if(resposta != 1 && resposta != 2) {
 					System.out.println("Opção inválida, digite novamente");
 				}
 			} while (resposta != 1 && resposta != 2);
-			System.out.println("Obrigado por usar nosso App!!");
+			Thread.sleep(3000);
+			System.out.println("\nObrigado por usar nosso App!!");
 		leia.close();
 	}
 }
