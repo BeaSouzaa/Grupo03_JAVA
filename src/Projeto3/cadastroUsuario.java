@@ -60,23 +60,22 @@ public class cadastroUsuario {
 		System.out.println("Digite aqui seu nome completo:"
 		+" (Apenas letras maiúsculas e minúsculas, sem símbolos ou números)");	
 		info.setNomeUsuario(leia.nextLine()) ;
+		
 		System.out.println("Digite a sua idade: ");
 		info.setIdadeUsuario(leia.nextInt());
+		while(info.getIdadeUsuario()<=0||info.getIdadeUsuario()>120) {
+			System.out.println("Por favor, digite uma idade válida");
+			System.out.println("Digite a sua idade:");
+			info.setIdadeUsuario(leia.nextInt());	        
+		}
 		System.out.println("Digite o seu CPF(Cadastro de Pessoas Físicas): (Somente números)");
 		info.setCpfUsuario(leia.next());
+		while(info.getCpfUsuario().length() != 11) {
+			System.out.println("Por favor, digite o CPF corretamente");
+			System.out.println("Digite o seu CPF(Cadastro de Pessoas Físicas): (Somente números)");
+			info.setCpfUsuario(leia.next());	        
+		}
 			
-			while(info.getCpfUsuario().length() != 11) {
-				System.out.println("Por favor, digite o CPF corretamente");
-				System.out.println("Digite a sua idade: ");
-				info.setCpfUsuario(leia.next());       	        
-			}
-		       
-			while(info.getCpfUsuario().length() != 11) {
-				System.out.println("Por favor, digite o CPF corretamente");
-				System.out.println("Digite o seu CPF(Cadastro de Pessoas Físicas):"  + "\n(Somente números)");
-				info.setCpfUsuario(leia.next());	        
-			}
-		
 		System.out.println("\nNome: "+info.getNomeUsuario());
 		System.out.println("Idade: "+info.getIdadeUsuario()+" anos");
 		System.out.println("CPF: "+info.getCpfUsuario());
