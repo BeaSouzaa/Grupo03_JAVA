@@ -13,5 +13,7 @@ Neste o usuário poderá deixar o nome do medicamento e e-mail para contato, ass
 avisado quando o medicamento entrar no sistema.
 
 ##
-Para ser executado, este programa necessita de IDE's como Eclipse ou Intellij 
+Para executar este programa é necessário :
 
+* IDE's como Eclipse ou Intellij 
+* Java 15 
