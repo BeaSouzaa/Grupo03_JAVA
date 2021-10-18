@@ -2,7 +2,7 @@
 Grupo 03 Generation Brasil 
 
 Composto por: 
-* Ana Ana Jorge
+* Ana Jorge
 * Beatriz Souza
 * Jhow Ruescas
 * Samanta Alves
