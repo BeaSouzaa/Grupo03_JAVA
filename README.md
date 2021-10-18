@@ -22,6 +22,4 @@ Para executar este programa é necessário :
 * Java 15 
 
 
-
-
 [ClickUBS](https://user-images.githubusercontent.com/90809864/137810647-5f899369-632b-4cd3-9529-b3b4fd413646.png)
