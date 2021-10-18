@@ -12,7 +12,7 @@ Composto por:
 
 Bem vindo ao projeto ClickUBS!
 
-Este projeto consiste em um sistema que visa facilitar a vida do usuário, através da busca de remédios em uma lista. Esta por sua vez, representa o estoque de uma Unidade Básica de Sáude. O objetivo é levar comodidade ao usuário, já que a consulta evita que o mesmo necessite se deslocar até uma unidade de UBS sem a certeza de que o medicamento encontra-se disponível.
+Este projeto foi desenvolvido durante o bootcamp da Generation e consiste em um sistema que visa facilitar a vida do usuário, através da busca de remédios em uma lista. Esta por sua vez, representa o estoque de uma Unidade Básica de Sáude. O objetivo é levar comodidade ao usuário, já que a consulta evita que o mesmo necessite se deslocar até uma unidade de UBS sem a certeza de que o medicamento encontra-se disponível.
 
 O sistema possui também um campo de cadastro, para os casos em que o remédio que o usuário procura não esteja disponível. 
 Neste o usuário poderá deixar o nome do medicamento e e-mail para contato, assim este será
