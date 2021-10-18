@@ -12,6 +12,9 @@ O sistema possui também um campo de cadastro, para os casos em que o remédio q
 Neste o usuário poderá deixar o nome do medicamento e e-mail para contato, assim este será
 avisado quando o medicamento entrar no sistema.
 
+Link da apresentação do projeto:
+https://docs.google.com/presentation/d/14ISGVjaMEKACTBUwlistL6lWDWItchGR0kwFFugBAA4/edit#slide=id.g6ad7e23cbf_0_141
+
 ##
 Para executar este programa é necessário :
 
